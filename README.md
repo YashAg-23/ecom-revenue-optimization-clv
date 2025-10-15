@@ -62,7 +62,6 @@ ecom-revenue-optimization-clv
 │
 └── executive_summary.md
 
-
 ---
 
 ## Tech Stack
