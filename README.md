@@ -5,6 +5,16 @@ This project focuses on analyzing and predicting **Customer Lifetime Value (CLV)
 
 ---
 
+## Dataset
+- **Source:** [Kaggle – Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- **About:** Real-world data from a large Brazilian marketplace containing detailed information on orders, payments, customers, reviews, and products.
+- **Note:**  
+  - Due to GitHub’s 25 MB file size limit, large raw and processed data files (e.g., `orders.csv`) have been excluded.  
+  - A **placeholder `data/` folder structure** has been provided to maintain reproducibility.  
+  - The dataset can be downloaded from the Kaggle link above to reproduce the complete analysis locally.
+
+---
+
 ## Objectives
 - Derive customer behavior insights through **RFM segmentation**
 - Predict future purchase frequency using the **BG/NBD model**
@@ -45,27 +55,31 @@ This project focuses on analyzing and predicting **Customer Lifetime Value (CLV)
 ---
 
 ## Folder Structure
-ecom-revenue-optimization-clv
+```
+Ecom_Revenue_Optimization_CLV/
 │
 ├── README.md
-├── data/
-│ ├── clv_data.csv
-│ ├── rfm_df.csv
-│ └── segment_summary.csv
+├── executive_summary.md
 │
 ├── notebooks/
-│ └── EDA_CLV_Modeling.ipynb
+│   └── Revenue_Optimization_Dashboard.ipynb
 │
 ├── outputs/
-│ ├── visualizations/
-│ └── clv_results.csv
+│   ├── clv_results.csv
+│   ├── rfm_df.csv
+│   └── segment_summary.csv
 │
-└── executive_summary.md
+└── data/
+    ├── raw/
+    │   └── README.txt  ← placeholder (raw data excluded)
+    └── processed/
+        └── README.txt  ← placeholder (processed data excluded due to size limits)
+```
 
 ---
 
 ## Tech Stack
-- Python
+- Python  
 - pandas, numpy, matplotlib, seaborn  
 - lifetimes (BG/NBD + Gamma-Gamma models)  
 - Excel (for planned dashboard)  
@@ -77,3 +91,6 @@ Customer Lifetime Value analysis is not just about prediction — it’s about *
 This project demonstrates how businesses can **use data to understand customers deeply, retain them smartly, and grow sustainably**.
 
 > “The companies that win long-term are those that understand their customers better than anyone else.”
+```
+
+
